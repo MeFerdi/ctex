@@ -1,0 +1,55 @@
+{
+  "services": [
+    {
+      "slug": "web-design",
+      "title": "Web Design",
+      "tagline": "Beautiful, high-performance websites and web products tailored for conversion and accessibility.",
+      "icon": "Monitor"
+    },
+    {
+      "slug": "social-media-management",
+      "title": "Social Media Management",
+      "tagline": "Strategy, content creation and campaign management that grows engagement and community.",
+      "icon": "Smartphone"
+    },
+    {
+      "slug": "filmography-video-editing",
+      "title": "Filmography & Video Editing",
+      "tagline": "Professional filming, storytelling and post-production to showcase your message.",
+      "icon": "Video"
+    },
+    {
+      "slug": "graphic-design",
+      "title": "Graphic Design",
+      "tagline": "Brand assets, marketing collateral and visual identities that communicate clearly.",
+      "icon": "Image"
+    },
+    {
+      "slug": "zim-installation",
+      "title": "ZIM File Installation for Schools",
+      "tagline": "Setup and deployment of ZIM offline content for educational institutions and libraries.",
+      "icon": "BookOpen"
+    },
+    {
+      "slug": "digital-automations",
+      "title": "Digital Automations",
+      "tagline": "Workflow automation and integrations that reduce manual work and scale operations.",
+      "icon": "Zap"
+    },
+    {
+      "slug": "ai-integrations",
+      "title": "AI Integrations",
+      "tagline": "Practical AI solutions — from smart assistants to data insights — designed to improve decision-making and customer experience.",
+      "icon": "Cpu"
+    }
+  ],
+  "insights": [
+    {
+      "slug": "design-systems",
+      "title": "Design Systems 101",
+      "publishedAt": "2024-12-01T12:00:00.000Z",
+      "summary": "Why design systems matter",
+      "icon": "BookOpen"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "Transform Your Business with Technology",
+    "subtitle": "CTEX Technologies delivers enterprise solutions that drive innovation, security, and growth. Partner with industry leaders in cloud, cybersecurity, and digital transformation.",
+    "ctaText": "Get Started",
+    "ctaLink": "/services"
+  },
+  "featuredServices": [
+    "web-design",
+    "social-media-management",
+    "filmography-video-editing",
+    "digital-automations"
+  ],
+  "latestPosts": 3
+  ,
+  "footer": {
+    "description": "At CTEX, we bring ideas to life through technology. Whether you need a website, social content, video, or design — we create solutions that help you stand out and connect, locally in Kenya and globally.",
+    "ctaText": "Get in touch",
+    "ctaLink": "/contact",
+    "contact": {
+      "email": "hello@ctex.co.ke",
+      "phone": "+254 700 000 000"
+    },
+    "address": "Mombasa, Kenya",
+    "social": {
+      "twitter": "https://twitter.com/ctex",
+      "linkedin": "https://www.linkedin.com/company/ctex",
+      "facebook": "https://www.facebook.com/ctex"
+    },
+    "copyright": "© 2025 CTEX Technologies. All rights reserved."
+  }
+}

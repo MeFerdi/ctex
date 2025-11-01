@@ -1,0 +1,30 @@
+{
+  "pageBuilder": [
+    {
+      "_type": "heroBlock",
+      "heading": "About CTEX Technologies",
+      "text": "Leading the future of enterprise technology solutions since 2010"
+    },
+    {
+      "_type": "textBlock",
+      "heading": "Our Mission",
+      "text": "At CTEX Technologies, we empower organizations to thrive in the digital age through innovative technology solutions. Our team of expert consultants, engineers, and strategists work alongside clients to deliver transformative results that drive measurable business value."
+    },
+    {
+      "_type": "textBlock",
+      "heading": "Our Expertise",
+      "text": "With over a decade of experience serving Fortune 500 companies and innovative startups alike, we've built a reputation for excellence in cloud computing, cybersecurity, data analytics, and digital transformation. Our client-first approach ensures that every solution is tailored to meet specific business objectives and industry requirements."
+    },
+    {
+      "_type": "teamGrid",
+      "heading": "Meet Our Leadership Team"
+    },
+    {
+      "_type": "ctaBlock",
+      "heading": "Ready to Transform Your Business?",
+      "text": "Let's discuss how CTEX Technologies can help you achieve your digital transformation goals.",
+      "buttonText": "Contact Us",
+      "buttonLink": "/services"
+    }
+  ]
+}
