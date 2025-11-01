@@ -1,0 +1,7 @@
+{
+  "name": "FeatureGrid",
+  "display_name": "Feature Grid",
+  "schema": {
+    "features": { "type": "bloks", "restrict_components": false, "pos": 0 }
+  }
+}
