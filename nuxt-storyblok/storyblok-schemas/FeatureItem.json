@@ -1,8 +1,0 @@
-{
-  "name": "FeatureItem",
-  "display_name": "Feature Item",
-  "schema": {
-    "title": { "type": "text", "pos": 0 },
-    "description": { "type": "text", "pos": 1 }
-  }
-}

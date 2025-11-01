@@ -1,9 +1,0 @@
-{
-  "name": "CTA_Block",
-  "display_name": "CTA Block",
-  "schema": {
-    "title": { "type": "text", "pos": 0 },
-    "button_text": { "type": "text", "pos": 1 },
-    "button_link": { "type": "link", "pos": 2 }
-  }
-}
