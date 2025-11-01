@@ -1,0 +1,179 @@
+[
+  {
+    "slug": "web-design",
+    "title": "Web Design",
+    "tagline": "Beautiful, high-performance websites and web products",
+    "icon": "Monitor",
+    "description": [
+      {
+        "_type": "block",
+        "children": [
+          {
+            "_type": "span",
+            "text": "We design and build websites and web applications that look exceptional, load fast, and convert visitors into customers. Our work follows best practices for accessibility, SEO, and cross-device performance."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Whether you're a local Kenyan business or a global brand, we craft user-centred experiences that reflect your identity and achieve measurable outcomes."
+          }
+        ]
+      }
+    ],
+    "keyFeatures": [
+      "Responsive design & accessibility",
+      "Performance & SEO optimisation",
+      "E-commerce & CMS integrations",
+      "Conversion-focused UX",
+      "Maintenance & hosting support"
+    ]
+  },
+  {
+    "slug": "social-media-management",
+    "title": "Social Media Management",
+    "tagline": "Strategy, content and community growth",
+    "icon": "Smartphone",
+    "description": [
+      {
+        "_type": "block",
+        "children": [
+          {
+            "_type": "span",
+            "text": "We create platform-appropriate content, run targeted campaigns, and manage communities to build brand awareness and sustained engagement. Our approach blends creative storytelling with data-driven optimisation."
+          }
+        ]
+      }
+    ],
+    "keyFeatures": [
+      "Content strategy & calendars",
+      "Creative assets (graphics, short-form video)",
+      "Paid social campaign management",
+      "Community & influencer partnerships",
+      "Performance reporting & insights"
+    ]
+  },
+  {
+    "slug": "filmography-video-editing",
+    "title": "Filmography & Video Editing",
+    "tagline": "Professional video production and post-production",
+    "icon": "Video",
+    "description": [
+      {
+        "_type": "block",
+        "children": [
+          {
+            "_type": "span",
+            "text": "From concept and shooting to editing and colour grading, we produce compelling video content for brands, events, and campaigns. We focus on storytelling that resonates with your target audience."
+          }
+        ]
+      }
+    ],
+    "keyFeatures": [
+      "Scriptwriting & storyboarding",
+      "On-location filming and production",
+      "Editing, motion graphics and colour grading",
+      "Optimised formats for social and broadcast",
+      "Sound design and mixing"
+    ]
+  },
+  {
+    "slug": "graphic-design",
+    "title": "Graphic Design",
+    "tagline": "Brand identities, marketing collateral and visuals",
+    "icon": "Image",
+    "description": [
+      {
+        "_type": "block",
+        "children": [
+          {
+            "_type": "span",
+            "text": "We craft clear, memorable visual identities and supporting design assets — from logos and brand guidelines to brochures, social templates and signage. Good design helps your message cut through."
+          }
+        ]
+      }
+    ],
+    "keyFeatures": [
+      "Logo and brand system design",
+      "Print and digital collateral",
+      "Packaging and retail graphics",
+      "Illustration and iconography",
+      "Design handoff and asset libraries"
+    ]
+  },
+  {
+    "slug": "zim-installation",
+    "title": "ZIM File Installation for Schools",
+    "tagline": "Offline educational content deployment",
+    "icon": "BookOpen",
+    "description": [
+      {
+        "_type": "block",
+        "children": [
+          {
+            "_type": "span",
+            "text": "We provide ZIM file installation and configuration for schools, libraries and learning centres — enabling offline access to rich educational resources where connectivity is limited."
+          }
+        ]
+      }
+    ],
+    "keyFeatures": [
+      "ZIM content selection and preparation",
+      "Installation on local servers and devices",
+      "Training for administrators and teachers",
+      "Custom indexing and local search setup",
+      "Ongoing support and updates"
+    ]
+  },
+  {
+    "slug": "digital-automations",
+    "title": "Digital Automations",
+    "tagline": "Automate workflows and scale operations",
+    "icon": "Zap",
+    "description": [
+      {
+        "_type": "block",
+        "children": [
+          {
+            "_type": "span",
+            "text": "We design and implement automation solutions that remove manual bottlenecks — integrating tools, building custom workflows, and creating reliable processes that save time and reduce errors."
+          }
+        ]
+      }
+    ],
+    "keyFeatures": [
+      "CRM and marketing automation",
+      "API integrations and webhooks",
+      "Custom scripts and serverless functions",
+      "Process orchestration and scheduling",
+      "Monitoring and observability"
+    ]
+  },
+  {
+    "slug": "ai-integrations",
+    "title": "AI Integrations",
+    "tagline": "Practical AI to improve products and decisions",
+    "icon": "Cpu",
+    "description": [
+      {
+        "_type": "block",
+        "children": [
+          {
+            "_type": "span",
+            "text": "We help organisations apply AI where it delivers real value — from intelligent chat assistants and content generation to predictive analytics and recommendation engines. Our focus is on safe, explainable, and cost-effective AI implementations."
+          }
+        ]
+      }
+    ],
+    "keyFeatures": [
+      "Conversational AI and chat assistants",
+      "Automated content generation and augmentation",
+      "Predictive models and recommendation systems",
+      "Custom integrations with existing platforms",
+      "Ethics, privacy and performance tuning"
+    ]
+  }
+]
