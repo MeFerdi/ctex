@@ -56,12 +56,8 @@ const About = () => {
                 <section key={index} className="py-12">
                   <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="max-w-3xl mx-auto">
-                      <h2 className="text-3xl font-bold text-foreground mb-4">
-                        {block.heading}
-                      </h2>
-                      <p className="text-lg text-muted-foreground leading-relaxed">
-                        {block.text}
-                      </p>
+                      <h2 className="text-3xl font-bold text-foreground mb-4">{block.heading}</h2>
+                      <p className="text-lg text-muted-foreground leading-relaxed">{block.text}</p>
                     </div>
                   </div>
                 </section>
