@@ -17,7 +17,7 @@ interface Post {
   };
 }
 
-const Insights = () => {
+const Changelog = () => {
   const { data: posts, loading } = useSanityData<Post[]>('posts');
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -39,11 +39,11 @@ const Insights = () => {
         <section className="bg-muted/50 py-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
-              <h1 className="text-4xl font-bold text-foreground sm:text-5xl">
-                Insights & Articles
+                  <h1 className="text-4xl font-bold text-foreground sm:text-5xl">
+                    Changelog
               </h1>
-              <p className="mt-4 text-lg text-muted-foreground">
-                Expert insights, industry trends, and best practices from the CTEX Technologies team.
+                  <p className="mt-4 text-lg text-muted-foreground">
+                    Product and project updates, release notes, and quick technical summaries from our work.
               </p>
             </div>
           </div>
@@ -105,4 +105,4 @@ const Insights = () => {
   );
 };
 
-export default Insights;
+export default Changelog;

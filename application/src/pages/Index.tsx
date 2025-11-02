@@ -88,27 +88,32 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Latest Insights */}
+        {/* Partners Section (replaces Insights on homepage) */}
         <section className="py-16 bg-muted/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-foreground sm:text-4xl">
-                Latest Insights
+                Partners
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                Expert perspectives on technology trends and best practices
+                Organisations we collaborate with and support across projects and initiatives.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {latestPosts.map((post) => (
-                <BlogPostCard
-                  key={post.slug}
-                  slug={post.slug}
-                  title={post.title}
-                  excerpt={post.excerpt}
-                  publishedAt={post.publishedAt}
-                  author={post.author}
-                />
+
+            <div className="flex flex-wrap justify-center gap-6">
+              {[
+                { name: 'EduHub' },
+                { name: 'OpenLibrary' },
+                { name: 'StudioNine' },
+                { name: 'LocalGov' },
+                { name: 'CreativeLab' }
+              ].map((p) => (
+                <div key={p.name} className="flex flex-col items-center w-40">
+                  <div className="h-20 w-20 rounded-full bg-muted flex items-center justify-center text-xl font-semibold text-foreground">
+                    {p.name.split(' ').map(n => n[0]).join('').slice(0,2).toUpperCase()}
+                  </div>
+                  <div className="mt-3 text-sm text-muted-foreground text-center">{p.name}</div>
+                </div>
               ))}
             </div>
           </div>
