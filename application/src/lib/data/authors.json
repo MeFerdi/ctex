@@ -2,11 +2,36 @@
   {
     "name": "Chrisphine Okoth",
     "role": "Founder & CEO",
-    "image":"/src/assets/images/IMG_20251027_160324(2).jpg"
+    "image":"/src/assets/images/WhatsApp Image 2025-11-01 at 10.24.18 PM(1).jpeg",
+    "linkedin": "https://www.linkedin.com/in/chrisphine-okoth",
+    "twitter": "https://twitter.com/chrisphine"
   },
   {
     "name": "Ferdynand Odhiambo",
-    "role": "CTO",
-    "image": "/src/assets/images/IMG_20250927_163343_574.jpg"
+    "role": "Founding Engineer",
+    "image": "/src/assets/images/IMG_20250927_163343_574.jpg",
+    "linkedin": "https://www.linkedin.com/in/ferdynand-odhiambo",
+    "twitter": "https://twitter.com/ferdynand"
+  },
+  {
+    "name": "Amelie Schneider",
+    "role": "Program Coordinator & Brand Strategist",
+    "image": "/src/assets/images/IMG_20251019_133315.jpg",
+    "linkedin": "https://www.linkedin.com/in/amelia-schneider",
+    "twitter": "https://twitter.com/amelia_sch"
+  },
+  {
+    "name": "Sylvia Opieba",
+    "role": "Chief Product Officer",
+    "image": "/src/assets/images/WhatsApp Image 2025-11-01 at 10.18.33 PM(1).jpeg",
+    "linkedin": "https://www.linkedin.com/in/sylvia-opieba",
+    "twitter": "https://twitter.com/sylviaopieba"
+  },
+  {
+    "name": "Derick Ochieng'",
+    "role": "Professional Videographer & Editor",
+    "image": "/src/assets/images/PSX_20251101_215523.jpg",
+    "linkedin": "https://www.linkedin.com/in/derick-ochieng",
+    "twitter": "https://twitter.com/derick_ochieng"
   }
 ]
