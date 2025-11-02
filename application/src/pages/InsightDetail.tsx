@@ -45,9 +45,8 @@ const InsightDetail = () => {
           <div className="text-center">
             <h1 className="text-4xl font-bold text-foreground mb-4">Article Not Found</h1>
             <Button asChild>
-              <Link to="/insights">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Insights
+              <Link to="/insights" className="hover:underline">
+                Back to Changelog
               </Link>
             </Button>
           </div>
@@ -78,9 +77,8 @@ const InsightDetail = () => {
         <section className="bg-muted/30 py-6">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <Button variant="ghost" asChild className="-ml-4">
-              <Link to="/insights">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Insights
+                <Link to="/insights" className="hover:underline">
+                  Back to Changelog
               </Link>
             </Button>
           </div>
