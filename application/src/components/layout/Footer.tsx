@@ -9,7 +9,7 @@ export function Footer() {
     company: [
       { name: 'About', path: '/about' },
       { name: 'Services', path: '/services' },
-      { name: 'Insights', path: '/insights' },
+  { name: 'Changelog', path: '/insights' },
     ],
     services: [
       { name: 'Web Design', path: '/services/web-design' },
@@ -24,7 +24,6 @@ export function Footer() {
 
   const socialLinks = [
     { name: 'LinkedIn', icon: Linkedin, url: 'https://linkedin.com' },
-    { name: 'GitHub', icon: Github, url: 'https://github.com' },
     { name: 'Twitter', icon: Twitter, url: 'https://twitter.com' },
   ];
 
