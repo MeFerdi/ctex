@@ -61,7 +61,6 @@ const Changelog = () => {
               </p>
               <div className="mt-6 flex justify-center gap-4">
                 <a href="/" className="px-4 py-2 rounded bg-primary text-primary-foreground">Return home</a>
-                <a href="/about" className="px-4 py-2 rounded border">Learn about our team</a>
               </div>
             </div>
           </div>
