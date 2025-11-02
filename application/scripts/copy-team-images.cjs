@@ -30,8 +30,24 @@ async function main() {
       if (a.image.startsWith('/src/assets/images')) {
         const filename = path.basename(a.image);
         const srcPath = path.join(srcImagesDir, filename);
-        const destPath = path.join(destImagesDir, filename);
-        await copyIfExists(srcPath, destPath);
+        // create a sanitized filename for the public folder: lowercase, replace
+        // spaces and unsafe chars with dashes, keep extension
+        const ext = path.extname(filename);
+        const base = path.basename(filename, ext);
+        const safeBase = base.replace(/[^a-z0-9._-]+/gi, '-').replace(/-+/g, '-').toLowerCase();
+        const safeFilename = `${safeBase}${ext.toLowerCase()}`;
+        const destPath = path.join(destImagesDir, safeFilename);
+        try {
+          await copyIfExists(srcPath, destPath);
+          // also copy original name as a fallback (some pages may still request it)
+          const destPathOrig = path.join(destImagesDir, filename);
+          if (destPathOrig !== destPath) {
+            await copyIfExists(srcPath, destPathOrig);
+          }
+          console.log(`Mapped ${filename} -> ${safeFilename}`);
+        } catch (err) {
+          console.warn('copy error for', filename, err && err.message);
+        }
       }
     }
     console.log('Done copying team images.');

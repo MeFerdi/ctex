@@ -54,11 +54,34 @@ export function TeamGridBlock({ heading = 'Our Team' }: TeamGridBlockProps) {
               .map((n) => n[0])
               .join('')
               .toUpperCase();
-
+            // Resolve image path for production robustly:
+            // - If the stored path includes 'src/assets/images' or 'assets/images',
+            //   map it to the public path `/assets/images/<filename>` so the browser
+            //   requests the static file served from public.
+            // - If the image is already an absolute URL (http/https) leave it as-is.
+            const rawImage = (member.image || '').trim();
+            let imageSrc = rawImage;
+            try {
+              const isAbsolute = /^https?:\/\//i.test(rawImage);
+              if (!isAbsolute && rawImage) {
+                // Extract filename and use a sanitized public assets filename.
+                // Sanitize: replace unsafe chars with '-', collapse repeats, lowercase.
+                const parts = rawImage.split('/');
+                const filename = parts[parts.length - 1] || rawImage;
+                const ext = filename.includes('.') ? filename.substring(filename.lastIndexOf('.')) : '';
+                const base = ext ? filename.substring(0, filename.lastIndexOf('.')) : filename;
+                const safeBase = base.replace(/[^a-z0-9._-]+/gi, '-').replace(/-+/g, '-').toLowerCase();
+                const safeFilename = `${safeBase}${ext.toLowerCase()}`;
+                imageSrc = `/assets/images/${safeFilename}`;
+              }
+            } catch (e) {
+              // fallback to rawImage
+              imageSrc = rawImage;
+            }
             return (
               <div key={member.name} className="w-72 flex flex-col items-center text-center">
                 <Avatar className="h-32 w-32 rounded-full ring-2 ring-primary/10 overflow-hidden">
-                  <AvatarImage src={member.image} alt={member.name} className="object-cover" />
+                  <AvatarImage src={imageSrc} alt={member.name} className="object-cover" />
                   <AvatarFallback className="text-lg bg-primary/10">{initials}</AvatarFallback>
                 </Avatar>
 
