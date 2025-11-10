@@ -9,6 +9,7 @@ import ServiceDetail from "./pages/ServiceDetail";
 import Changelog from "./pages/Insights";
 import InsightDetail from "./pages/InsightDetail";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/insights" element={<Changelog />} />
           <Route path="/insights/:slug" element={<InsightDetail />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
