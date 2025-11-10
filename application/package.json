@@ -10,7 +10,8 @@
   "build:dev": "vite build --mode development",
   "lint": "eslint .",
   "preview": "vite preview",
-  "copy-team-images": "node scripts/copy-team-images.cjs"
+  "copy-team-images": "node scripts/copy-team-images.cjs",
+  "deploy": "npm run build && npx wrangler deploy --assets ./dist"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
