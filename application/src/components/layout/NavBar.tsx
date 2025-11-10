@@ -87,7 +87,7 @@ export function Navbar() {
 
             {/* CTA Button - Desktop */}
             <Button asChild className="hidden md:inline-flex">
-              <Link to="/services">Contact Us</Link>
+              <Link to="/contact">Contact Us</Link>
             </Button>
 
             {/* Mobile menu button */}
@@ -126,7 +126,7 @@ export function Navbar() {
                 </Link>
               ))}
               <Button asChild className="mt-4">
-                <Link to="/services" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
                   Contact Us
                 </Link>
               </Button>
