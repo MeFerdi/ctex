@@ -102,15 +102,28 @@ const Index = () => {
 
             <div className="flex flex-wrap justify-center gap-6">
               {[
-                { name: 'EduHub' },
-                { name: 'OpenLibrary' },
-                { name: 'StudioNine' },
-                { name: 'LocalGov' },
-                { name: 'CreativeLab' }
+                { name: 'TajiZuri', logo: '/assets/images/tajizuri-logo-transparent.png' },
+                // { name: 'OpenLibrary', logo: '/assets/images/openlibrary.png' },
+                // { name: 'StudioNine', logo: '/assets/images/studionine.png' },
+                // { name: 'LocalGov', logo: '/assets/images/localgov.png' },
+                // { name: 'CreativeLab', logo: '/assets/images/creativelab.png' }
               ].map((p) => (
                 <div key={p.name} className="flex flex-col items-center w-40">
-                  <div className="h-20 w-20 rounded-full bg-muted flex items-center justify-center text-xl font-semibold text-foreground">
-                    {p.name.split(' ').map(n => n[0]).join('').slice(0,2).toUpperCase()}
+                  <div className="h-20 w-20 rounded-full bg-muted overflow-hidden flex items-center justify-center">
+                    {/* Attempt to load partner logo from public assets; fall back to a project image if missing */}
+                    <img
+                      src={p.logo}
+                      alt={`${p.name} logo`}
+                      className="h-full w-full object-cover"
+                      onError={(e) => {
+                        // Replace missing partner logo with a known project image as a graceful fallback
+                        const img = e.currentTarget as HTMLImageElement;
+                        if (img.src && !img.src.includes('1760686469887.jpeg')) {
+                          img.onerror = null;
+                          img.src = '/assets/images/1760686469887.jpeg';
+                        }
+                      }}
+                    />
                   </div>
                   <div className="mt-3 text-sm text-muted-foreground text-center">{p.name}</div>
                 </div>
