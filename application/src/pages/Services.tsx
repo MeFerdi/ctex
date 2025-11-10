@@ -1,6 +1,7 @@
 import { Navbar } from '@/components/layout/NavBar';
 import { Footer } from '@/components/layout/Footer';
 import { ServiceCard } from '@/components/blocks/ServiceCard';
+import ServiceGridWithLines from '@/components/blocks/ServiceGridWithLines';
 import { useSanityData } from '@/lib/sanity/useSanityData';
 
 interface Service {
@@ -45,17 +46,7 @@ const Services = () => {
                 ))}
               </div>
             ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {services?.map((service) => (
-                  <ServiceCard
-                    key={service.slug}
-                    icon={service.icon}
-                    title={service.title}
-                    tagline={service.tagline}
-                    slug={service.slug}
-                  />
-                ))}
-              </div>
+              <ServiceGridWithLines services={services || []} k={2} />
             )}
           </div>
         </section>
