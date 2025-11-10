@@ -1,0 +1,6 @@
+name = "ctex-technologies"
+compatibility_date = "2025-11-11"
+
+# This project is a static SPA built by Vite. We publish the built files
+# as assets. The deploy command in package.json passes `--assets ./dist`.
+# If you later want wrangler to build for you, add a [build] section.
