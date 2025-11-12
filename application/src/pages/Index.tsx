@@ -103,7 +103,7 @@ const Index = () => {
             <div className="flex flex-wrap justify-center gap-6">
               {[
                 { name: 'TajiZuri', logo: '/assets/images/tajizuri-logo-transparent.png' },
-                // { name: 'OpenLibrary', logo: '/assets/images/openlibrary.png' },
+                { name: 'Edu Initiative', logo: '/assets/images/cropped-cropped-IMG-20250411-WA0003-removebg-preview.png' },
                 // { name: 'StudioNine', logo: '/assets/images/studionine.png' },
                 // { name: 'LocalGov', logo: '/assets/images/localgov.png' },
                 // { name: 'CreativeLab', logo: '/assets/images/creativelab.png' }
